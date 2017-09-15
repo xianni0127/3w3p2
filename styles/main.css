@@ -1,0 +1,405 @@
+body {
+
+  display:flex;
+  margin: 0;
+	font-family: 'Poiret One', sans-serif;
+  margin-top: 1%
+}
+
+ul, p, h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
+
+button {
+  margin-bottom: 20%;
+  margin-top:10%;
+  background-color: white;
+  border: 1px solid;
+  border-color: rgb(221, 221, 221);
+  color: rgb(25,159,134);
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+	color: #666;
+}
+
+li {
+  list-style: none;
+  color:green
+}
+ul li  p {
+  color: green
+}
+
+i {
+
+  margin-right:5%;
+  color:black
+}
+
+button i {
+  margin-right:0;
+}
+main {
+  margin-right:5%;
+}
+
+aside {
+  display:flex;
+  flex-direction: column;
+}
+
+aside aside section p {
+  font-size: 20%
+}
+
+.left_aside hr {
+  display:none
+}
+main  {
+  display:flex;
+  flex-direction: column;
+}
+
+
+main ul  {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between
+
+
+}
+main .top_area ul li section {
+  background-color: rgb(235, 247, 245);
+  line-height:200%;
+
+
+}
+
+main .top_area ul li {
+
+  border-right: 1px solid  rgb(200,232,226);
+}
+
+main .top_area ul li:last-child {
+
+  border-right: none
+}
+main .top_area ul li section  p {
+  font-size: smaller;
+
+}
+
+hr {
+  height:1px;border:none;border-top:1px dashed gray;
+}
+
+footer hr{
+  height:1px;border:none;border-top:1px solid gray;
+}
+.top_area {
+  background-color: rgb(235, 247, 245);
+  margin: 0
+
+}
+
+.cake_image p {
+
+}
+
+.cake_image p:last-child {
+  height: 10%;
+  text-align: right;
+}
+.form_area {
+
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+
+.bottom_area  image {
+  margin-bottom: 3%;
+  border: 2px solid  gray;
+  vertical-align:text-top;
+}
+
+.bottom_area article p {
+  font-size: 12px;
+  text-align:left;
+
+}
+.bottom_area article section{
+  display:flex;
+  flex-direction: row;
+}
+
+.bottom_area article section p:first-child{
+  color: gray
+}
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap:nowrap;
+}
+
+
+form button {
+  margin-bottom: 0;
+  margin-top:0;
+  background-color:rgb(223,223,223);
+  color:black
+}
+
+.email_subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  width: 40%
+}
+
+form  div p {
+  margin-left: 1%;
+  width: 100%;
+  font-size: 100%
+}
+
+form div input {
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 100%;
+  border:1px solid gray
+}
+
+form div button {
+  font-size: 100%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.left_aside {
+    margin-left: 3%;
+    margin-right: 3%;
+    width:28%
+
+}
+
+.tweet {
+  margin-top: 20%;
+}
+.logo {
+  height:12%;
+  width:80%;
+  margin-bottom: 10%;
+
+}
+
+
+.cake_image {
+  background:url(../resources/foodsense.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  line-height:550%;
+  margin-bottom:0
+}
+
+
+footer {
+	position:fixed;
+  bottom:0px;
+	width: 100%;
+	height:10%;
+	text-align:left;
+	line-height:7%;
+  background-color: rgb(255,255,255)
+}
+
+footer p {
+  margin-top: 2%;
+  font-size: 12px;
+  font-size-adjust: auto;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start
+}
+footer nav li {
+  margin-top: 1%;
+  margin-right: 1%;
+  font-size: 12px;
+
+  border-right: 2px solid  rgb(149,149,149);
+}
+footer nav li:last-child {
+  border-right: none
+}
+
+
+@media screen and (max-width: 718px) and (min-width:413px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%
+  }
+
+  .logo {
+    height:10%;
+    width:20%;
+    margin-bottom: 2%;
+  }
+  .left_aside {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: auto
+  }
+
+  .left_aside ul  {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+  }
+  .left_aside hr {
+    display:none
+  }
+  .left_aside ul li {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around
+  }
+
+  .top_area ul li section p {
+    display: none
+  }
+  form {
+    align-items: center;
+    font-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+  }
+
+
+
+
+  .bottom_area  ul li {
+    width: 25%
+  }
+
+  .bottom_area ul li img {
+    margin-left: 3%;
+    margin-right: 3%;
+    border: 1px solid gray;
+    width: 90%
+  }
+
+  .tweet {
+    display: none
+  }
+
+  main {
+    margin-right: 0%;
+}
+}
+
+@media screen and (max-width: 413px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .left_aside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: auto
+  }
+
+  .left_aside i {
+    display: none;
+  }
+  .left_aside ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left_aside div {
+    display:column;
+    flex-direction: column;
+  }
+  .logo {
+    height: 12%;
+    width: 40%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 30%;
+  }
+
+
+  .top_area ul {
+    display: none
+  }
+
+
+  .tweet {
+    display: none
+  }
+
+
+  .bottom_area ul  {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .bottom_area ul li {
+    margin-top: 3%;
+    margin-bottom: 3%
+    width:auto;
+  }
+
+  .bottom_area ul li img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%
+  }
+  .logo {
+    order:2;
+  }
+
+  .left_aside div {
+    order:1;
+  }
+
+  .left_aside hr {
+    display: block;
+    height:1px;border:none;border-top:1px solid gray;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap:wrap;
+  }
+  .email_subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
